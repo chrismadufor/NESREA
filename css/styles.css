@@ -3,7 +3,7 @@
   --lightgreen: rgba(226, 255, 226, 0.856);
   --lightgrey: #eee;
   --white: #fff;
-  --shadow: rgba(188, 255, 188, 0.712);
+  --shadow: rgba(150, 165, 150, 0.3);
 }
 * {
   box-sizing: border-box;

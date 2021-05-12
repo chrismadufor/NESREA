@@ -23,31 +23,83 @@
         </div>
         <!-- CHANGE TO LINKS -->
         <p>
-          <a><i class="fas fa-envelope"></i> @nesrea.gov.ng</a>
+          <a href="#" class="row"
+            ><i class="fas fa-envelope"></i> &nbsp;@nesrea.gov.ng</a
+          >
         </p>
-        <p><i class="fas fa-phone-alt"></i> +2348039876543</p>
+        <p class="row"><i class="fas fa-phone-alt"></i> &nbsp;+2348039876543</p>
       </div>
       <div class="row staff-block">
-        <p class="border-right">Staff Email</p>
-        <p>Staff Portal</p>
+        <p class="border-right">
+          <a href="#"><i class="far fa-newspaper"></i> Our Mandate</a>
+        </p>
+        <p class="border-right">
+          <a href="#"><i class="fas fa-envelope"></i> Staff Email</a>
+        </p>
+        <p>
+          <a href="#"><i class="far fa-building"></i> Staff Portal</a>
+        </p>
       </div>
     </div>
     <header class="row header space-between">
-      <img src="img/logo.png" alt="logo" class="logo" />
+      <a href="index.html">
+        <img src="img/logo.png" alt="logo" class="logo"
+      /></a>
       <ul class="nav-links row uppercase">
         <li class="nav-active"><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">News & Blog</a></li>
-        <li><a href="#">Publicatons</a></li>
+        <li class="dropdown">
+          <a href="#">About us</a><i class="fa fa-angle-down"></i>
+          <div class="dropdown-list">
+            <ul>
+              <li><a href="#">Our Functions</a></li>
+              <li><a href="#">Our Activities</a></li>
+              <li><a href="#">Our Strategy</a></li>
+              <li><a href="#">Our Structure</a></li>
+              <li><a href="#">Partnership</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="dropdown">
+          News <i class="fa fa-angle-down"></i>
+          <div class="dropdown-list">
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="dropdown">
+          Publicatons
+          <i class="fa fa-angle-down"></i>
+          <div class="dropdown-list">
+            <ul>
+              <li><a href="#">Permits</a></li>
+              <li><a href="#">Laws & Regulations</a></li>
+              <li><a href="#">Policies & Guidelines</a></li>
+              <li><a href="#">Download Forms</a></li>
+              <li><a href="#">Download NESREA Act</a></li>
+            </ul>
+          </div>
+        </li>
         <li><a href="#">FAQ</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="dropdown">
+          <a href="#">Contact Us</a> <i class="fa fa-angle-down"></i>
+          <div class="dropdown-list">
+            <ul>
+              <li><a href="#">Enquiries</a></li>
+              <li><a href="#">Our Offices</a></li>
+              <li><a href="#">Environmental Violations</a></li>
+              <li><a href="#">Report A Violation</a></li>
+            </ul>
+          </div>
+        </li>
       </ul>
       <div id="menu-icon">
         <i id="menu-icon-logo" onclick="lockScroll();" class="fas fa-bars"></i>
       </div>
     </header>
     <div id="slideout-menu">
-      <ul>
+      <ul class="slide-nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">News & Blog</a></li>
@@ -110,41 +162,41 @@
         </p>
       </div>
       <div class="services-container">
-        <div class="service-item row">
+        <div onclick="iconBlockHover();" class="service-item row">
           <div class="icon-block">
             <i class="fas fa-handshake"></i>
           </div>
-          <p>Extended Producer Responsibility</p>
+          <p><a href="">Extended Producer Responsibility</a></p>
         </div>
         <div class="service-item row">
           <div class="icon-block">
             <i class="fas fa-truck"></i>
           </div>
-          <p>Import Clearance Procedure</p>
+          <p><a href="">Import Clearance Procedure</a></p>
         </div>
         <div class="service-item row">
           <div class="icon-block">
             <i class="fab fa-envira"></i>
           </div>
-          <p>Environmental Permit Procedure</p>
+          <p><a href="">Environmental Permit Procedure</a></p>
         </div>
         <div class="service-item row">
           <div class="icon-block">
             <i class="fas fa-gavel"></i>
           </div>
-          <p>Laws and Regulations</p>
+          <p><a href="">Laws and Regulations</a></p>
         </div>
         <div class="service-item row">
           <div class="icon-block">
             <i class="fas fa-user-tie"></i>
           </div>
-          <p>Environmental Consultants</p>
+          <p><a href="">Environmental Consultants</a></p>
         </div>
         <div class="service-item row">
           <div class="icon-block">
             <i class="fas fa-exclamation"></i>
           </div>
-          <p>CITES Enforcement</p>
+          <p><a href="">CITES Enforcement</a></p>
         </div>
       </div>
     </section>
@@ -184,17 +236,26 @@
           <div class="top-stories-title center">
             <h3>Top Stories</h3>
           </div>
-          <div class="top-stories-item center">
-            <a href="#"><p>We want a raise!</p> </a>
-          </div>
-          <div class="top-stories-item center">
-            <a href="#"><p>NESREA staff celebrate the director</p> </a>
-          </div>
-          <div class="top-stories-item center">
-            <a href="#"><p>Dr. Princewill Amaefule becomes NESREA boss</p> </a>
-          </div>
-          <div class="top-stories-item center">
-            <a href="#"><p>New DG promises to fix agency problems</p> </a>
+          <div class="top-stories-block">
+            <div class="top-stories-item center">
+              <a href="#"><p>We want a raise!</p> </a>
+            </div>
+            <div class="top-stories-item center">
+              <a href="#"><p>NESREA staff celebrate the director</p> </a>
+            </div>
+            <div class="top-stories-item center">
+              <a href="#"><p>Import clearance operations still ongoing</p> </a>
+            </div>
+            <div class="top-stories-item center">
+              <a href="#"><p>DG promises to fix agency problems</p> </a>
+            </div>
+            <div class="top-stories-item center">
+              <a href="#"
+                ><p>
+                  View all &nbsp; <i class="fas fa-angle-double-right"></i>
+                </p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -227,88 +288,95 @@
       </div>
     </section>
     <footer>
-      <div class="footer-item">
-        <img src="img/logo.png" alt="logo" class="footer-logo" />
-        <p>
-          National Environmental Standards And Regulations Enforcement Agency
-        </p>
-        <p class="address"></p>
-        <div class="contact">
-          <p><i class="fas fa-envelope"></i> dg@nesrea.gov.ng</p>
-          <p><i class="fas fa-envelope"></i> info@nesrea.gov.ng</p>
-          <p><i class="fas fa-phone-alt"></i> +2348039876543</p>
+      <div class="wrap">
+        <div class="footer-item">
+          <img src="img/logo.png" alt="logo" class="footer-logo" />
+          <p>
+            National Environmental Standards And <br />
+            Regulations Enforcement Agency
+          </p>
+          <p class="address"></p>
+          <div class="contact">
+            <p><i class="fas fa-envelope"></i> dg@nesrea.gov.ng</p>
+            <p><i class="fas fa-envelope"></i> info@nesrea.gov.ng</p>
+            <p><i class="fas fa-phone-alt"></i> +2348039876543</p>
+          </div>
         </div>
-      </div>
-      <div class="footer-item">
-        <h3>We are commited to</h3>
-        <ul>
-          <li>
-            <a href="#"
-              ><i class="fas fa-check-circle"></i>Ecosystem Conservation</a
-            >
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-check-circle"></i>Pollution Control</a>
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fas fa-check-circle"></i>Environmental Education</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fas fa-check-circle"></i>Sustainable Waste
-              Management</a
-            >
-          </li>
-          <li><a href="#">See all our activities</a></li>
-        </ul>
-      </div>
-      <div class="footer-item">
-        <h3>Quick Links</h3>
-        <ul>
-          <li>
-            <a href="#"><i class="fas fa-arrow-right"></i>Permits</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-arrow-right"></i>Partnerships</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-arrow-right"></i>Publications</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-arrow-right"></i>About Us</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-arrow-right"></i>FAQ</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-arrow-right"></i>Staff Portal</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-arrow-right"></i>Staff Email Login</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-item">
-        <h3>For Further Enquiries</h3>
-        <ul>
-          <li>
-            <a href="#"><i class="fab fa-facebook"></i>Chat With Us</a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-youtube"></i>See Our Activities</a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter"></i>Follow Us</a>
-          </li>
-          <li>
-            <a><i class="fab fa-android"></i>Our Android App</a>
-          </li>
-          <li>
-            <a><i class="fab fa-apple"></i>Get Our IOS App</a>
-          </li>
-        </ul>
+        <div class="footer-item">
+          <h3>We are commited to</h3>
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fas fa-check-circle"></i>Ecosystem Conservation</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-check-circle"></i>Pollution Control</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-check-circle"></i>Environmental Education</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-check-circle"></i>Sustainable Waste
+                Management</a
+              >
+            </li>
+            <li><a href="#">See all our activities</a></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-arrow-right"></i>Permits</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-arrow-right"></i>Partnerships</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-arrow-right"></i>Publications</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-arrow-right"></i>About Us</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-arrow-right"></i>FAQ</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-arrow-right"></i>Staff Portal</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-arrow-right"></i>Staff Email Login</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h3>For Further Enquiries</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i>Chat With Us</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i>See Our Activities</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i>Follow Us</a>
+            </li>
+            <li>
+              <a><i class="fab fa-android"></i>Our Android App</a>
+            </li>
+            <li>
+              <a><i class="fab fa-apple"></i>Get Our IOS App</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
     <div class="copyright row">

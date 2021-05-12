@@ -34,6 +34,7 @@ repeat();
 // MOBILE NAV MENU
 const menuIcon = document.getElementById('menu-icon');
 const slideOutMenu = document.getElementById('slideout-menu');
+const links = document.querySelectorAll('slide-nav-links li')
 
 menuIcon.addEventListener('click', function() {
     if (slideOutMenu.style.opacity == "1") {
@@ -44,10 +45,16 @@ menuIcon.addEventListener('click', function() {
         slideOutMenu.style.opacity = "1";
         slideOutMenu.style.pointerEvents = "auto";
         // menuIcon.style.color = 'white'
-
     }
+});
 
-})
+function fade(){
+ links.classlist.toggle('fade')
+}
+
 function lockScroll() {
     document.body.classList.toggle('lock-scroll');
 }
+
+
+

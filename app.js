@@ -34,19 +34,13 @@ repeat();
 // MOBILE NAV MENU
 const menuIcon = document.getElementById('menu-icon');
 const slideOutMenu = document.getElementById('slideout-menu');
-const links = document.querySelectorAll('slide-nav-links li')
+const links = document.querySelectorAll('slide-nav-links li');
+const bar = document.getElementById('bar')
 
-menuIcon.addEventListener('click', function() {
-    if (slideOutMenu.style.opacity == "1") {
-        slideOutMenu.style.opacity = "0";
-        slideOutMenu.style.pointerEvents = "none";
-        menuIcon.style.color = 'rgb(49, 60, 61)'
-    } else {
-        slideOutMenu.style.opacity = "1";
-        slideOutMenu.style.pointerEvents = "auto";
-        // menuIcon.style.color = 'white'
-    }
-});
+menuIcon.addEventListener('click', () => {
+    slideOutMenu.classList.toggle('open')
+    bar.classList.toggle('rotate')
+})
 
 function fade(){
  links.classlist.toggle('fade')

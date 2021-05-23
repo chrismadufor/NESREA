@@ -11,7 +11,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Welcome to NESREA Official website</title>
+    <link rel="stylesheet" href="css/about.css" />
+    <title>
+      Contact NESREA | National Environmental Standards and Regulations Agency
+    </title>
   </head>
   <body>
     <div class="header-component">
@@ -49,9 +52,10 @@
           <img src="img/logo.png" alt="logo" class="logo"
         /></a>
         <ul class="nav-links row uppercase">
-          <li class="nav-active"><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li class="dropdown">
-            <a href="about.html">About us</a><i class="fa fa-angle-down"></i>
+            <a href="about.html">About us</a>
+            <i class="fa fa-angle-down"></i>
             <div class="dropdown-list">
               <ul>
                 <li><a href="#">Our Functions</a></li>
@@ -85,9 +89,9 @@
             </div>
           </li>
           <li><a href="#">FAQ</a></li>
-          <li class="dropdown">
+          <li class="dropdown nav-active">
             <a href="contact.html">Contact Us</a>
-            <i class="fa fa-angle-down"></i>
+            <!-- <i class="fa fa-angle-down"></i> -->
             <div class="dropdown-list">
               <ul>
                 <li><a href="#">Enquiries</a></li>
@@ -104,11 +108,11 @@
       </header>
       <div id="slideout-menu">
         <ul class="slide-nav-links">
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="#">News & Blog</a></li>
           <li><a href="#">Publications</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
           <li><a href="#">FAQ</a></li>
           <li><a href="#">Staff Email</a></li>
           <li><a href="#">Staff Portal</a></li>
@@ -122,182 +126,49 @@
         </ul>
       </div>
     </div>
-    <div class="slider-container">
-      <div class="img-slider">
-        <div class="slide active" id="slide-one">
-          <div class="slide-content">
-            <h1 class="slide-title">Welcome to NESREA</h1>
-            <button class="slide-btn">About Us</button>
+    <div class="main-container">
+      <article>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2342.8302657348854!2d7.457291463961403!3d9.049609455896487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0bfe978fba59%3A0x8fc64a79ab9de263!2sNational%20Environmental%20Standards%20and%20Regulations%20Enforcement%20Agency%20(Nesrea)!5e0!3m2!1sen!2sng!4v1621742763146!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="contact-text">
+          <div>
+            <h4>Headquarters</h4>
+            <p> <i class="fas fa-map-marker-alt"></i> No. 56 Lome Crescent, Wuse Zone 7, Abuja. <br><i class="fas fa-envelope"></i> dg@nesrea.gov.ng <br><i class="fas fa-phone-alt"></i>+2348146099778 </p>
+          </div>
+          <div>
+            <h4>For Permit Enquiry</h4>
+            <p> <i class="fas fa-map-marker-alt"></i> No. 56 Lome Crescent, Wuse Zone 7, Abuja. <br><i class="fas fa-envelope"></i> ppa@nesrea.gov.ng </p>
+          </div>
+          <div>
+            <h4>For Inspection and Enforcement enquiry</h4>
+            <p> <i class="fas fa-map-marker-alt"></i> No. 56 Lome Crescent, Wuse Zone 7, Abuja. <br><i class="fas fa-envelope"></i> ie@nesrea.gov.ng </p>
+          </div>
+          <div>
+            <h4>For Public Enquiry </h4>
+          <p> <i class="fas fa-map-marker-alt"></i> No. 56 Lome Crescent, Wuse Zone 7, Abuja. <br><i class="fas fa-envelope"></i> info@nesrea.gov.ng </p>
+          </div>
+          <div class="connect-with-us">
+            <h2>Connect With Us</h2>
+            <p> Follow us on all our social media accounts and suscribe to our channels to get updates.</p>
+            <div class="contact-socials">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-youtube-square"></i>
+            </div>
           </div>
         </div>
-        <div class="slide" id="slide-two">
-          <div class="slide-content">
-            <h1 class="slide-title">Report a Violation</h1>
-            <a><button class="slide-btn">Report</button></a>
-          </div>
-        </div>
-        <div class="slide" id="slide-three">
-          <div class="slide-content">
-            <h1 class="slide-title">Accreditation of Consultants</h1>
-            <a><button class="slide-btn">Register Here</button></a>
-          </div>
-        </div>
-      </div>
-      <div class="slider-navigation">
-        <div class="slider-btn active"></div>
-        <div class="slider-btn"></div>
-        <div class="slider-btn"></div>
-      </div>
+        <form action="">
+          <h3>How Can We Help you</h3>
+          <input type="text" placeholder="Name"/>
+          <input type="text" placeholder="Email"/>
+          <input type="text" placeholder="Phone Number"/>
+          <textarea name="message" id="message"></textarea placeholder="Enter Message Here">
+            <input type="submit" value="Submit" id="submit">
+        </form>
+      </article>
+      <aside>
+
+      </aside>
     </div>
-    <div class="banner row">
-      <p>Updates</p>
-      <div class="news" id="news">
-        <ul class="row">
-          <li>No recruitment is ongoing at NESREA at the moment</li>
-        </ul>
-      </div>
-    </div>
-    <section class="welcome column">
-      <!-- CHANGE ALL TO LINKS -->
-      <div class="welcome-block text-center">
-        <h2>Welcome to NESREA</h2>
-        <p>
-          The National Environmental Standards and Regulations Enforcement
-          Agency (NESREA) is an Agency of the Federal Ministry of Environment
-          charged with the responsibility of enforcing environmental laws,
-          regulations and standards in deterring people, industries and
-          organizations from polluting and degrading the environment. <br />
-          NESREA has responsibility for the protection and development of the
-          environment, biodiversity conservation and sustainable development of
-          Nigeria’s natural resources and environmental technology.
-        </p>
-      </div>
-      <div class="services-container">
-        <div onclick="iconBlockHover();" class="service-item row">
-          <div class="icon-block">
-            <i class="fas fa-handshake"></i>
-          </div>
-          <p><a href="">Extended Producer Responsibility</a></p>
-        </div>
-        <div class="service-item row">
-          <div class="icon-block">
-            <i class="fas fa-truck"></i>
-          </div>
-          <p><a href="">Import Clearance Procedure</a></p>
-        </div>
-        <div class="service-item row">
-          <div class="icon-block">
-            <i class="fab fa-envira"></i>
-          </div>
-          <p><a href="">Environmental Permit Procedure</a></p>
-        </div>
-        <div class="service-item row">
-          <div class="icon-block">
-            <i class="fas fa-gavel"></i>
-          </div>
-          <p><a href="">Laws and Regulations</a></p>
-        </div>
-        <div class="service-item row">
-          <div class="icon-block">
-            <i class="fas fa-user-tie"></i>
-          </div>
-          <p><a href="">Environmental Consultants</a></p>
-        </div>
-        <div class="service-item row">
-          <div class="icon-block">
-            <i class="fas fa-exclamation"></i>
-          </div>
-          <p><a href="">CITES Enforcement</a></p>
-        </div>
-      </div>
-    </section>
-    <section class="mandate-block column">
-      <p class="center-text">
-        At NESREA, we aim to inspire personal and collective responsibility in
-        building an environmentally conscious society for the achievement of
-        sustainable development in Nigeria.
-      </p>
-      <button>Read More</button>
-    </section>
-    <section class="stories-block">
-      <h2 class="text-center uppercase">Environmental Stories</h2>
-      <div class="stories column">
-        <div class="latest-news">
-          <div class="latest-news-header">
-            <h3>Latest News Update</h3>
-          </div>
-          <div class="latest-news-item-wrap">
-            <div class="latest-news-item">
-              <img src="img/r1.jpg" alt="" />
-              <div class="news-header column">
-                <p>NESREA acquires crime records informaton system</p>
-                <button>Read More</button>
-              </div>
-            </div>
-            <div class="latest-news-item">
-              <img src="img/r2.jpg" alt="" />
-              <div class="news-header column">
-                <p>NESREA boss promises better welfare for staff</p>
-                <button>Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="top-stories column">
-          <div class="top-stories-title center">
-            <h3>Top Stories</h3>
-          </div>
-          <div class="top-stories-block">
-            <div class="top-stories-item center">
-              <a href="#"><p>We want a raise!</p> </a>
-            </div>
-            <div class="top-stories-item center">
-              <a href="#"><p>NESREA staff celebrate the director</p> </a>
-            </div>
-            <div class="top-stories-item center">
-              <a href="#"><p>Import clearance operations still ongoing</p> </a>
-            </div>
-            <div class="top-stories-item center">
-              <a href="#"><p>DG promises to fix agency problems</p> </a>
-            </div>
-            <div class="top-stories-item center">
-              <a href="#"
-                ><p>
-                  View all &nbsp; <i class="fas fa-angle-double-right"></i>
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="gallery">
-      <h2 class="uppercase">Photo Gallery</h2>
-      <div class="img-block row">
-        <img src="img/r1.jpg" alt="demo" class="photo" />
-        <img src="img/r2.jpg" alt="demo" class="photo" />
-        <img src="img/r3.jpg" alt="demo" class="photo" />
-        <img src="img/r4.jpg" alt="demo" class="photo" />
-        <img src="img/slide1.jpg" alt="demo" class="photo" />
-        <img src="img/slide2.jpg" alt="demo" class="photo" />
-        <img src="img/r1.jpg" alt="demo" class="photo" />
-        <img src="img/r2.jpg" alt="demo" class="photo" />
-        <img src="img/r3.jpg" alt="demo" class="photo" />
-        <img src="img/r4.jpg" alt="demo" class="photo" />
-        <img src="img/slide1.jpg" alt="demo" class="photo" />
-        <img src="img/slide2.jpg" alt="demo" class="photo" />
-      </div>
-      <button>Visit Gallery</button>
-    </section>
-    <section class="partners-block">
-      <h2 class="uppercase">Our Partners</h2>
-      <div class="partners-item-wrap row">
-        <img src="img/p1.jpg" alt="" class="partners-item" />
-        <img src="img/p2.jpg" alt="" class="partners-item" />
-        <img src="img/p3.jpg" alt="" class="partners-item" />
-        <img src="img/p4.jpg" alt="" class="partners-item" />
-      </div>
-    </section>
     <footer>
       <div class="wrap">
         <div class="footer-item">
@@ -326,9 +197,7 @@
               <a href="#"><i class="fas fa-arrow-right"></i>Publications</a>
             </li>
             <li>
-              <a href="about.html"
-                ><i class="fas fa-arrow-right"></i>About Us</a
-              >
+              <a href="#"><i class="fas fa-arrow-right"></i>About Us</a>
             </li>
             <li>
               <a href="#"><i class="fas fa-arrow-right"></i>FAQ</a>

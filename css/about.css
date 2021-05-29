@@ -2,7 +2,7 @@ article h1,
 article h2,
 article h3,
 article h4 {
-  color: rgb(31, 49, 22);
+  color: var(--darkgreen);
 }
 .lock-scroll {
   overflow: hidden;
@@ -46,6 +46,10 @@ article h4 {
   width: 120px;
   margin: 0 auto;
 }
+article {
+  width: 95%;
+  margin: 0 auto;
+}
 article h3 {
   font-size: 18px;
 }
@@ -54,7 +58,7 @@ article h3 {
   margin: auto;
   text-align: justify;
   word-spacing: normal;
-  line-height: 24px;
+  line-height: 28px;
   padding: 20px 0;
   color: rgba(0, 0, 0, 0.877);
 }
@@ -63,7 +67,10 @@ article h3 {
   flex-direction: column;
 }
 aside {
-  background-color: var(--lightgreen);
+  /* background-color: var(--lightgreen); */
+  background-color: rgb(246, 254, 255);
+  padding: 0 20px;
+  font-size: "poppins";
 }
 .aside-links {
   display: flex;
@@ -72,10 +79,10 @@ aside {
 }
 .aside-links li {
   text-transform: capitalize;
-  font-weight: 700;
-  font-size: "rubik";
+  font-weight: 600;
   width: 100%;
-  color: rgb(31, 49, 22);
+  /* color: var(--darkgreen); */
+  color: rgb(71, 78, 78);
   text-align: center;
   border-bottom: 1px solid rgba(31, 63, 28, 0.144);
 }
@@ -84,16 +91,15 @@ aside {
   color: var(--white);
 }
 li.links-title:hover {
-  background-color: var(--lightgreen);
-  color: rgb(31, 49, 22);
+  background-color: var(--green);
+  color: white;
 }
 /* -----CONTACT PAGE STYLES----- */
 form {
   width: 100%;
   /* margin: 0 auto; */
-  padding: 10px 20px 20px;
+  padding: 10px 10px 20px;
   background-color: var(--lightgreen);
-  max-width: 700px;
 }
 form h3 {
   text-transform: uppercase;
@@ -106,7 +112,7 @@ textarea {
   border-radius: 4px;
   margin: 20px 0 0;
   background-color: rgb(250, 255, 255);
-  color: rgb(31, 49, 22);
+  color: var(--darkgreen);
   font-family: "rubik";
   font-size: 14px;
 }
@@ -116,10 +122,13 @@ input {
 }
 textarea {
   height: 200px;
+  padding: 10px 20px;
 }
 input:focus,
 textarea:focus {
   outline: none;
+  box-shadow: 0 0 4px 0 var(--green);
+  outline-offset: inherit;
 }
 #submit {
   background-color: var(--green);
@@ -127,6 +136,7 @@ textarea:focus {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 iframe {
   width: 100%;
@@ -140,6 +150,7 @@ iframe {
 }
 .contact-text p {
   margin: 0;
+  width: 800px;
 }
 .contact-text i {
   color: var(--green);
@@ -153,6 +164,9 @@ iframe {
 }
 .contact-text h4 {
   margin: 16px 0 10px;
+}
+.contact-text button {
+  margin: 10px 0;
 }
 .contact-socials i {
   font-size: 36px;
@@ -168,15 +182,42 @@ iframe {
   width: 90%;
   margin: 0 auto;
   text-align: left;
-  padding: 20px 20px;
+  padding: 20px 10px;
 }
 .contact-us-links i,
 .about-us-links i {
   font-size: 18px;
 }
-li.links-title {
+li.links-title,
+h3.links-title {
   text-transform: uppercase;
+  /* background-color: var(--green); */
+  color: var(--darkgreen);
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 4px solid rgb(171, 173, 171);
 }
+.our-offices p,
+.report p,
+.connect-with-us p,
+.contact-text div p {
+  width: 100%;
+  max-width: 600px;
+}
+.report-violation {
+  display: none;
+}
+.report a {
+  color: var(--green);
+  text-decoration: underline;
+}
+.about-news {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .main-container {
     width: 95%;
@@ -193,28 +234,27 @@ li.links-title {
   }
   article {
     width: 95%;
-    max-width: 800px;
+    /* max-width: 800px; */
     margin: 0 auto;
     padding-bottom: 40px;
   }
   aside {
     width: 90%;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
-  }
-  .aside-links {
-    padding: 10px 0 0px;
   }
   .about-us-text {
     width: 100%;
   }
+  form {
+    padding: 20px 20px 30px;
+  }
 }
-@media (min-width: 1180px) {
+@media (min-width: 1200px) {
   .main-container {
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1500px;
-    /* position: relative; */
+    border: none;
   }
   .article-image-container {
     padding: 0;
@@ -225,23 +265,65 @@ li.links-title {
     font-size: 20px;
   }
   article {
-    width: 72%;
+    width: 73%;
     max-width: unset;
+    margin: 0px;
   }
   aside {
     position: sticky;
     height: 100vh;
     top: 0;
-    width: 20%;
-    margin-top: 0px;
+    width: 22%;
+    margin: 0px;
     padding-top: 0;
   }
+  form {
+    max-width: 800px;
+    padding: 20px 30px 30px;
+  }
   iframe {
+    width: 100%;
     min-height: 300px;
     max-height: 400px;
     margin-top: 0;
   }
   .contact-us-links {
     display: block;
+  }
+  .report-violation {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px 10px 30px;
+    border-bottom: 2px solid rgba(31, 63, 28, 0.144);
+    text-align: center;
+  }
+  .report-violation p {
+    font-weight: 500;
+    color: rgb(71, 78, 78);
+  }
+  .report-violation h3 {
+    /* padding: 0 5px 10px; */
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    /* border-bottom: 4px solid var(--darkgreen); */
+    text-transform: uppercase;
+  }
+  .about-news {
+    display: block;
+    /* padding: 0px 20px 20px; */
+    margin-top: 40px;
+    text-align: center;
+    border-bottom: 2px solid rgba(31, 63, 28, 0.144);
+  }
+  .about-news img {
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    display: block;
+    object-fit: cover;
   }
 }

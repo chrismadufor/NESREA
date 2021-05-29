@@ -5,6 +5,7 @@
   --lightgrey: #eee;
   --white: #fff;
   --shadow: rgba(150, 165, 150, 0.3);
+  --darkgreen: rgb(31, 49, 22);
 }
 /* CUSTOM SCROLL BAR */
 /* width */
@@ -119,6 +120,7 @@ a {
   background-color: var(--green);
   display: none;
   color: var(--lightgrey);
+  padding: 0 20px;
 }
 .top-banner * {
   margin: 0;
@@ -126,8 +128,9 @@ a {
 }
 .top-banner-contact {
   width: 40%;
+  max-width: 500px;
   /* margin: 0 auto; */
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .top-banner-contact i,
@@ -138,9 +141,10 @@ a {
   font-size: 18px;
 }
 .staff-block {
-  width: 40%;
+  width: 43%;
+  max-width: 500px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .staff-block * {
@@ -149,11 +153,16 @@ a {
 .border-right {
   border-right: 1px solid var(--lightgrey);
 }
+.header-component {
+  width: 100%;
+  max-width: 1700px;
+  margin: auto;
+}
 header {
   width: 100%;
   height: 60px;
   background-color: var(--white);
-  padding: 0 20px 0 10px;
+  padding: 0 20px;
   position: fixed;
   z-index: 10;
   box-shadow: 0px 0px 5px rgb(77, 92, 94);
@@ -289,7 +298,7 @@ ul {
 .slider-container {
   width: 100%;
   height: 60vh;
-  min-height: 450px;
+  min-height: 400px;
   max-height: 700px;
   position: relative;
 }
@@ -420,6 +429,7 @@ section h2 {
   height: 60px;
   padding: 0 15px;
   font-weight: 600;
+  cursor: pointer;
 }
 .service-item a {
   padding: 15px 0;
@@ -444,6 +454,9 @@ section h2 {
   font-size: 16px;
   margin: 0;
 }
+.white-bg {
+  background-color: white;
+}
 
 .mandate-block {
   width: 100%;
@@ -452,7 +465,7 @@ section h2 {
   max-height: 550px;
   align-items: center;
   justify-content: center;
-  margin: 20px 0 30px;
+  margin: 20px 0 0px;
   background-image: linear-gradient(rgba(3, 29, 0, 0.75), rgba(0, 56, 7, 0.322)),
     url(../img/mandate.png);
   background-repeat: no-repeat;
@@ -469,7 +482,8 @@ section h2 {
 }
 /* MESSAGE FROM THE DIRECTOR */
 .dg-block-wrap {
-  /* background-color: var(--lightgreen); */
+  padding: 30px 0 10px;
+  background-color: var(--lightgreen);
   width: 100%;
 }
 .dg-block {
@@ -477,7 +491,7 @@ section h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 20px auto;
+  margin: 0px auto 20px;
   /* padding: 20px 0 30px; */
 }
 .dg-block h1 {
@@ -491,13 +505,12 @@ section h2 {
 }
 .dg-img {
   width: 80%;
-  max-width: 150px;
+  max-width: 170px;
 }
 .dg-img img {
   display: block;
   width: 100%;
   border: 3px solid var(--green);
-  /* border-radius: 50%; */
 }
 .dg-message-block {
   width: 95%;
@@ -639,7 +652,7 @@ footer ul li {
 @media (min-width: 768px) {
   header {
     height: 70px;
-    padding: 10px 20px;
+    padding: 10px 50px 10px 30px;
   }
   .logo {
     height: 65px;
@@ -760,7 +773,13 @@ footer ul li {
     /* max-width: 3; */
   }
 }
-@media (min-width: 1180px) {
+@media (min-width: 1200px) {
+  .main-container {
+    margin: auto;
+    /* border-left: 2px solid var(--shadow); */
+    box-shadow: 5px 5px 5px var(--shadow);
+    max-width: 1700px;
+  }
   #menu-icon {
     display: none;
   }
@@ -768,11 +787,17 @@ footer ul li {
     display: flex;
     /* margin-bottom: 10px; */
   }
+  .header-component {
+    /* border-left: 2px solid var(--shadow); */
+    box-shadow: 5px 5px 5px var(--shadow);
+  }
   header {
     position: sticky;
     top: 0;
     z-index: 50;
+    height: 80px;
     position: relative;
+    box-shadow: none;
   }
   .nav-links {
     display: flex;
@@ -849,7 +874,7 @@ footer ul li {
     width: 100%;
     height: 85vh;
     min-height: 500px;
-    max-height: 550px;
+    max-height: 530px;
   }
   .service-item {
     height: 80px;
@@ -878,13 +903,18 @@ footer ul li {
     flex-direction: row;
     justify-content: space-between;
   }
-  .welcome-block,
-  .top-stories {
+  .welcome-block {
     width: 35%;
   }
-  .services-container,
-  .latest-news {
+  .services-container {
     width: 60%;
+  }
+  .top-stories {
+    width: 30%;
+    min-width: 360px;
+  }
+  .latest-news {
+    width: 65%;
   }
   .mandate-block {
     min-height: 400px;

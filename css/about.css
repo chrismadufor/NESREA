@@ -206,6 +206,7 @@ h3.links-title {
 .contact-text div p {
   width: 100%;
   max-width: 600px;
+  text-align: justify;
 }
 .report-violation {
   display: none;

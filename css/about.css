@@ -238,6 +238,7 @@ h3.links-title {
 }
 .faq-text {
   display: none;
+  line-height: 28px;
 }
 ol.faq-text {
   padding-left: 20px;

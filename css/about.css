@@ -218,7 +218,40 @@ h3.links-title {
 .about-news {
   display: none;
 }
-
+/* FAQ & PUBLICATIONS PAGE */
+.article-wrap {
+  padding-top: 70px;
+  text-align: justify;
+  line-height: 28px;
+}
+.article-wrap h1 {
+  text-align: left;
+  font-size: 20px;
+  /* padding-bottom: 10px; */
+  border-bottom: 4px solid var(--green);
+  margin-bottom: 20px;
+}
+.faq-title {
+  font-size: 14px;
+  cursor: pointer;
+  text-align: left;
+}
+.faq-text {
+  display: none;
+}
+ol.faq-text {
+  padding-left: 20px;
+}
+.ye {
+  display: block;
+}
+.gr {
+  color: var(--green);
+}
+article h4 {
+  font-size: 14px;
+  text-align: left;
+}
 @media (min-width: 768px) {
   .main-container {
     width: 95%;
@@ -249,6 +282,16 @@ h3.links-title {
   }
   form {
     padding: 20px 20px 30px;
+  }
+  .article-wrap {
+    padding-top: 80px;
+  }
+  article h4,
+  .faq-title {
+    font-size: 16px;
+  }
+  .article-wrap p a {
+    text-align: left;
   }
 }
 @media (min-width: 1200px) {
@@ -326,5 +369,11 @@ h3.links-title {
     height: 100px;
     display: block;
     object-fit: cover;
+  }
+  .article-wrap {
+    padding-top: 0;
+  }
+  .article-wrap h1 {
+    height: 50px;
   }
 }

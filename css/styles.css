@@ -236,14 +236,17 @@ ul {
   min-width: 100vw;
   height: 100vh;
   min-height: 400px;
-  /* background-color: rgba(10, 39, 10, 0.432); */
+  background-color: transparent;
   z-index: 50;
-  transition: 0.3s;
+  transition: all 0.3s ease;
   margin-left: 100vw;
   margin-top: 60px;
 }
 #slideout-menu.open {
   margin-left: 0;
+}
+#slideout-menu.bg-go {
+  background-color: rgba(10, 39, 10, 0.432);
 }
 .slide-nav-links {
   height: 100%;
@@ -386,20 +389,45 @@ h1.slide-title {
 /* -----END OF SLIDER STYLES------ */
 .banner {
   background-color: var(--lightgrey);
-  padding: 10px;
-  height: 50px;
+  padding: 0 10px;
+  height: 40px;
   width: 100%;
+  display: flex;
+  align-items: center;
   overflow: hidden;
 }
 .banner p {
   padding-right: 5px;
   margin-right: 10px;
-  border-right: 1px solid grey;
+  border-right: 2px solid grey;
+  text-transform: uppercase;
+}
+.news {
+  height: 40px;
+  /* background-color: red; */
 }
 /* -----check this for iphone 5------ */
 .news ul {
   display: flex;
-  min-width: 100vw;
+  align-items: center;
+  /* min-width: 100vw; */
+  width: fit-content;
+  flex-direction: column;
+  /* background-color: blue; */
+  margin-top: 0px;
+}
+.news ul li {
+  display: block;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+.news ul li.go {
+  opacity: 1;
 }
 /* ----SECTION STYLES----- */
 section {
@@ -493,6 +521,10 @@ section h2 {
   justify-content: center;
   margin: 0px auto 20px;
   /* padding: 20px 0 30px; */
+}
+.youtube-video {
+  width: 95%;
+  max-width: 500px;
 }
 .dg-block h1 {
   text-align: center;

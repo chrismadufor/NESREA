@@ -1,0 +1,42 @@
+.main-containers {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  background-color: black;
+  height: 100%;
+}
+.a {
+  width: 70%;
+  height: 100%;
+  background-color: red;
+}
+.b {
+  width: 25%;
+  height: 100vh;
+  background-color: blue;
+}
+.c {
+  background-color: green;
+  height: 200px;
+  width: 80%;
+}
+.d {
+  background-color: lavender;
+  height: 200px;
+  width: 80%;
+}
+.e {
+  background-color: hotpink;
+  height: auto;
+  width: 80%;
+}
+.f {
+  background-color: firebrick;
+  height: 200px;
+  width: 80%;
+}
+.g {
+  background-color: firebrick;
+  height: 200px;
+  width: 80%;
+}

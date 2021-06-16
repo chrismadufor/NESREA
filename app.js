@@ -34,6 +34,7 @@ repeat();
 // MOBILE NAV MENU
 const menuIcon = document.getElementById('menu-icon');
 const slideOutMenu = document.getElementById('slideout-menu');
+const linksContainer = document.querySelector('.slide-nav-links')
 const links = document.querySelectorAll('.slide-nav-links li');
 const bar = document.getElementById('bar')
 
@@ -45,12 +46,8 @@ menuIcon.addEventListener('click', () => {
     }else{ 
     slideOutMenu.classList.add('bg-go')
     }
+    linksContainer.classList.toggle('nav-animation')
 })
-
-function fade(){
- links.classlist.toggle('fade')
-}
-
 function lockScroll() {
     document.body.classList.toggle('lock-scroll');
 }
@@ -100,6 +97,24 @@ var vertSlider = function(){
     repeaters();
 }
 vertSlider();
+
+// gallery auto-slider
+const imgWrap = document.querySelector('.img-wrap')
+const images = document.querySelectorAll('.img-wrap img')
+const imageItems = images.length
+const animationDuration = imageItems * 7 + 's'
+const translateX = images.length * -150
+const root = document.documentElement
+
+root.style.setProperty("--img-transform", translateX+'px')
+
+for(i=0; i<imageItems; i++){
+
+    imgWrap.appendChild(imgWrap.children[i].cloneNode(true));
+    imgWrap.style.animationDuration = animationDuration
+
+}
+
 
 // FAQ page open and close effect
 

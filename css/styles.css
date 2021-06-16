@@ -6,6 +6,8 @@
   --white: #fff;
   --shadow: rgba(150, 165, 150, 0.3);
   --darkgreen: rgb(31, 49, 22);
+  /* Gallery slider */
+  --img-transform: calc(-1 * 150px * 10);
 }
 /* CUSTOM SCROLL BAR */
 /* width */
@@ -239,11 +241,15 @@ ul {
   background-color: transparent;
   z-index: 50;
   transition: all 0.3s ease;
-  margin-left: 100vw;
+  /* margin-left: 100vw; */
   margin-top: 60px;
+  opacity: 0;
+  pointer-events: none;
 }
 #slideout-menu.open {
-  margin-left: 0;
+  /* margin-left: 0; */
+  opacity: 1;
+  pointer-events: auto;
 }
 #slideout-menu.bg-go {
   background-color: rgba(10, 39, 10, 0.432);
@@ -261,13 +267,23 @@ ul {
   align-items: center;
   position: relative;
 }
+.nav-animation {
+  animation: navbar 0.3s linear;
+}
+@keyframes navbar {
+  0% {
+    margin-right: -70%;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
 .slide-nav-links li {
   color: var(--white);
   width: 100%;
   font-size: 14px;
   text-align: center;
 }
-
 .slide-nav-links li a {
   display: block;
   width: 100%;
@@ -282,6 +298,9 @@ ul {
 }
 #slideout-menu .slideout-menu-socials {
   width: 100px;
+  margin-top: 40px;
+}
+.extra {
   margin-top: 40px;
 }
 #social-links {
@@ -392,7 +411,7 @@ h1.slide-title {
   padding: 0 10px;
   height: 40px;
   width: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   overflow: hidden;
 }
@@ -621,16 +640,48 @@ section h2 {
   width: 100%;
 }
 .img-block {
-  overflow: auto;
+  position: relative;
+  overflow: hidden;
 }
-.img-block::-webkit-scrollbar {
-  height: 0px;
+/* .img-block:before,
+.img-block:after {
+  position: absolute;
+  width: 80px;
+  top: 0;
+  content: " ";
+  z-index: 1;
+  height: 100%;
 }
-.img-block img {
+.img-block:before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgb(235, 243, 243) 0%,
+    transparent 100%
+  );
+}
+.img-block:after {
+  right: 0;
+  background: linear-gradient(to left, rgb(235, 243, 243) 0%, transparent 100%);
+} */
+.img-wrap {
+  height: 100%;
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(var(--img-transform));
+  }
+}
+.img-wrap img {
   width: 150px;
   height: 150px;
-  margin-right: 3px;
-  border: 2px solid rgb(119, 129, 124);
+  border: 2px solid rgb(29, 29, 29);
+  object-fit: cover;
 }
 .gallery button {
   margin-top: 20px;
@@ -691,6 +742,7 @@ footer ul li {
   }
   .banner {
     height: 40px;
+    display: flex;
   }
   .slider-container {
     width: 100%;
